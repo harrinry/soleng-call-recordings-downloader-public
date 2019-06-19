@@ -8,10 +8,7 @@ The update mode enables users to pull recordings from the back-end using the con
 __Note__: API was designed to enable querying for recordings between predefined intervals of time. That way, date and time parameters are not bound - this essentially means that the time of the recording is associated to the current day of search and not the entire period of query.
 
 ## Installation
-Users should download the version for their platform. The files are available on the releases tab at the top:
-
-![]
-(https://github.com/fuze/soleng-call-recordings-downloader-public/tree/master/images/release_tab.jpeg)
+Users should download the version for their platform. There is a link at the top of this page called 'Release' where all executables are stored, grouped by it's version.
 
  Currently there are 3 versions available: windows (cli-win.exe),mac (cli-macos) and linux (cli-linux). There is no installation procedure, so users are free to save the file to the desired file system path.
 In order to run it on UNIX systems ( Linux / MacOS ), execute permissions must be given to this file. To do this, please open a command line window ( Terminal  app on MacOS, bash/shell on Linux ) and run ```chmod +x [file-name]``` ( file name being the name of the downloaded file).
