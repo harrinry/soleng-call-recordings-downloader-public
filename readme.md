@@ -10,7 +10,7 @@ __Note__: API was designed to enable querying for recordings between predefined 
 ## Installation
 Users should download the version for their platform. The files are available on the releases tab at the top:
 
-![Image of Release Tab]
+![]
 (https://github.com/fuze/soleng-call-recordings-downloader-public/tree/master/images/release_tab.jpeg)
 
  Currently there are 3 versions available: windows (cli-win.exe),mac (cli-macos) and linux (cli-linux). There is no installation procedure, so users are free to save the file to the desired file system path.
