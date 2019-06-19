@@ -34,7 +34,7 @@ __Note__: For the windows version ( cli-win.exe ), make sure to run the app with
 
 ```cli-win.exe download [username] [password] [start-date] [end-date] [start-time] [end-time] [output-folder] ```
 
-### __UPDATE___
+### __UPDATE__
 
 To run the application on update mode ( application will check for new call recordings on a pre-specified interval), please use the following syntax:
 
