@@ -5,7 +5,6 @@
   "description": "An application to Store Call Recordings on local computer",
   "repository": "https://github.com/fuze/soleng-call-recordings-downloader",
   "license": "MIT",
-  "main": "index.js",
   "author": {
     "name": "Fuze INC.",
     "email": "support@fuze.com"
@@ -23,40 +22,25 @@
     "github": {
       "release": true,
       "assets": [
-        "dist/*.exe",
-        "dist/*.dmg",
         "dist/terminal/*"
       ]
     }
   },
   "scripts": {
     "test": "node_modules/.bin/tape test/*.js | node_modules/.bin/tap-spec",
-    "start": "electron .",
-    "rebuild": "electron-rebuild -e node_modules/electron",
-    "package-daemon-tool": "electron-builder -m -w --x64",
-    "package-command-line-tool": "npx pkg ./cli.js --out-path=dist/terminal",
-    "package-all": "rm -rf dist/* & npm run package-command-line-tool",
-    "afterBump": "npm run package-all",
-    "afterRelease": "echo Successfully released ${name} v${version} to ${repo.repository}.",
-    "exec-release": "release-it --no-npm.publish"
+    "package": "npx pkg ./cli.js --out-path=dist/terminal",
+    "release": "release-it --no-npm.publish"
   },
   "dependencies": {
-    "electron-debug": "^1.0.0",
     "moment": "^2.22.2",
     "soleng-warden-client": "git+https://github.com/fuze/soleng-warden-authenticator.git#1.1.0",
     "winston": "^2.3.1",
     "yargs": "^12.0.5"
   },
   "devDependencies": {
-    "devtron": "^1.1.0",
-    "electron": "^2.0.0",
-    "electron-builder": "^20.38.3",
-    "electron-packager": "^8.0.0",
-    "electron-prebuilt-compile": "^2.0.0",
     "express": "^4.16.4",
-    "npx": "^10.2.0",
-    "release-it": "^9.8.1",
-    "tap-spec": "^4.1.1",
+    "release-it": "^12.3.6",
+    "tap-spec": "^5.0.0",
     "tape": "4.8.0",
     "xo": "^0.23.0"
   },
