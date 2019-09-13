@@ -18,18 +18,10 @@
       "releaseType": "release"
     }
   },
-  "release-it": {
-    "github": {
-      "release": true,
-      "assets": [
-        "dist/terminal/*"
-      ]
-    }
-  },
   "scripts": {
     "test": "node_modules/.bin/tape test/*.js | node_modules/.bin/tap-spec",
     "package": "npx pkg ./cli.js --out-path=dist/terminal",
-    "release": "npx pkg ./cli.js --out-path=dist/terminal && release-it --no-npm.publish"
+    "release": "release-it --no-npm.publish"
   },
   "dependencies": {
     "moment": "^2.22.2",
